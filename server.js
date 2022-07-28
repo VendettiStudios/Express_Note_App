@@ -1,5 +1,5 @@
 import express from "express";
-
+import bodyParser from "body-parser";
 const app = express();
 const port = 3000;
 
@@ -8,47 +8,31 @@ const port = 3000;
 // });
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
+  console.log(`Notes App listening on port ${port}`);
 });
 app.use(express.static("public"));
-
+app.use(bodyParser());
 app.get("/notes", (req, res) => {
-  res.sendFile("notes.html", {root:"./public"});
+  res.sendFile("notes.html", { root: "./public" });
 });
 // Added Notes function
-const notes = [{title:"Note1", text:"text text text"}];
+const notes = [{ title: "Note1", text: "text text text" }];
 
 app.get("/api/notes", (req, res) => {
-    res.send(notes)
-})
+  res.send(notes);
+});
 
 app.post("/api/notes", (req, res) => {
-    console.log(JSON.stringify(req))
-    const title = req.body.title;
-    const text = req.body.text;
-    notes.push({title, text});
-    res.send({title, text});
-})
+  const title = req.body.title;
+  const text = req.body.text;
+  notes.push({ title, text });
+  res.send({ title, text });
+});
 
-// const handleNoteSave = () => {
-//     const newNote = {
-//       title: noteTitle.value,
-//       text: noteText.value,
-//     };
-// saveNote(newNote).then(() => {
-//     getAndRenderNotes();
-//     renderActiveNote();
-//   });
-
-
-// const saveNote = (note) =>
-//   fetch('/api/notes', {
-//     method: 'POST',
-//     headers: {
-//       'Content-Type': 'application/json',
-//     },
-//     body: JSON.stringify(note),
-//   });
+app.delete("/api/notes/:id", (req, res) => {
+  const id = req.params.id;
+  const index = notes.findIndex(note => note.id = id)
+});
 
 // const deleteNote = (id) =>
 //   fetch(`/api/notes/${id}`, {
