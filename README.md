@@ -46,8 +46,8 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 ​
 ### Screenshot
 ​
-![](./assets/images/SS1.png)
-![](./assets/images/SS2.png)
+![](./public/assets/images/SS1.png)
+![](./public/assets/images/SS2.png)
 ​
 ### Links
 ​
