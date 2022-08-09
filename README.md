@@ -51,8 +51,8 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 ​
 ### Links
 ​
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://vendettistudios.github.io/lets-take-notes/)
+- Solution URL: [Solution URL](https://github.com/VendettiStudios/lets-take-notes/settings)
+- Live Site URL: [Live Site](https://vendettistudios.github.io/lets-take-notes/)
 ​
 ## My process
 ​
