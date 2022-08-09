@@ -16,7 +16,7 @@ app.get("/notes", (req, res) => {
   res.sendFile("notes.html", { root: "./public" });
 });
 // Added Notes function
-const notes = [{ title: "Note1", text: "text text text" }];
+const notes = [{ id: 0, title: "Note1", text: "text text text" }];
 
 app.get("/api/notes", (req, res) => {
   res.send(notes);
@@ -25,19 +25,15 @@ app.get("/api/notes", (req, res) => {
 app.post("/api/notes", (req, res) => {
   const title = req.body.title;
   const text = req.body.text;
-  notes.push({ title, text });
-  res.send({ title, text });
+  const id = notes.length;
+  notes.push({ id, title, text });
+  res.send({ id, title, text });
 });
 
 app.delete("/api/notes/:id", (req, res) => {
   const id = req.params.id;
   const index = notes.findIndex(note => note.id = id)
+  if(index != -1)
+    notes.splice(index, 1)
+    res.send({})
 });
-
-// const deleteNote = (id) =>
-//   fetch(`/api/notes/${id}`, {
-//     method: 'DELETE',
-//     headers: {
-//       'Content-Type': 'application/json',
-//     },
-//   });
