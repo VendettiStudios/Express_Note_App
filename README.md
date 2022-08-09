@@ -48,7 +48,7 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 ​
 ![](./public/assets/images/SS1.png)
 ![](./public/assets/images/SS2.png)
-​
+
 ### Links
 ​
 - Solution URL: [Solution URL](https://github.com/VendettiStudios/lets-take-notes/settings)
