@@ -1,5 +1,4 @@
-# Project Name - change to the name of your project
-​lets-take-notes
+# Project Name - lets-take-notes
 ## Table of contents
 ​
 - [Overview](#overview)
