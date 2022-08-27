@@ -1,4 +1,4 @@
-# Project Name - lets-take-notes
+# lets-take-notes
 ## Table of contents
 ​
 - [Overview](#overview)
