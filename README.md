@@ -76,4 +76,4 @@ Adding an edit function.
 ​
 ## Author
 ​
-- Daniel : Daniel@VendettiStudios.com
+- [Daniel Holloway](https://DanielHolloway.dev)
