@@ -34,6 +34,6 @@ app.delete("/api/notes/:id", (req, res) => {
   const id = req.params.id;
   const index = notes.findIndex(note => note.id = id)
   if(index != -1)
-    notes.splice(index, 1)
-    res.send({})
+  notes.splice(index, 1)
+  res.send({})
 });
