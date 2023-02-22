@@ -51,7 +51,7 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 ### Links
 ​
 - Solution URL: [Solution URL](https://github.com/VendettiStudios/JS_Note_App)
-- Live Site URL: [Live Site](https://vendettistudios.github.io/JS_Note_App/)
+- Live Site URL: [Live Site](https://express-notes-app.herokuapp.com/notes)
 ​
 ## My process
 ​
