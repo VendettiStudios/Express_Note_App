@@ -63,6 +63,7 @@ body {
 .list-item-title {
   display: inline-block;
   word-wrap: break-word;
+  max-width:70px;
 }
 
 .list-container i {
