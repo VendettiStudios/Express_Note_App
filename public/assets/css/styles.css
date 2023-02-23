@@ -33,7 +33,7 @@ body {
 .note-title {
   height: 50px;
   margin-top: 13px;
-  font-size: 3rem;
+  font-size: x-large;
 }
 
 .note-title:read-only,
@@ -62,7 +62,7 @@ body {
 
 .list-item-title {
   display: inline-block;
-  width: 75%;
+  width: 70%;
 }
 
 .list-container i {
